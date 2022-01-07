@@ -20,7 +20,6 @@ const Scanner = ({result,setResult}) => {
     return (
         <div>
             <BarcodeScannerComponent width={500} height={500} onUpdate={handleupdate}/>
-            <p>{JSON.stringify(result)}</p>
         </div>
     )
 }
