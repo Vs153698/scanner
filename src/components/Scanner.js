@@ -5,21 +5,22 @@ const Scanner = ({result,setResult}) => {
       if (resultdata) {
           if (result.first === '') {
               setResult({...result,first:resultdata.text})
-          }else if(result.second === ''){
-              setResult({...result,second:resultdata.text})
-          }else if(result.third === ''){
-              setResult({...result,third:resultdata.text})
-          }else if(result.fourth === ''){
-              setResult({...result,fourth:resultdata.text})
-          }else{
-              setResult({first:'none',second:"none",third:'none',fourth:'none'})
+       
+            }else if(result.second === ''){
+                setResult({...result,second:resultdata.text})
+                
+            }else if(result.third === ''){
+                setResult({...result,third:resultdata.text})
+            
+            }else if(result.fourth === ''){
+                setResult({...result,fourth:resultdata.text})    
           }
 
       }
   }
     return (
         <div>
-            <BarcodeScannerComponent width={500} height={500} onUpdate={handleupdate}/>
+            <BarcodeScannerComponent  width={500} height={500} onUpdate={handleupdate} />
         </div>
     )
 }
